@@ -1,8 +1,5 @@
 package code;
 
-/**
- * Code005
- */
 public class Code005 {
     public static void main(String[] args) {
         int x = 5;

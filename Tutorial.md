@@ -18,6 +18,12 @@ class demo{
 }
 ```
 
+## 输出
+
+输出后不换行：`System.out.print();`
+
+输出后自动换行：`System.out.println();`
+
 ## 运算符
 
 和C语言基本一致。最基本的加减乘除和取余
@@ -32,6 +38,8 @@ class demo{
 
 和C语言一致，(){}。
 
-## for语句
+## 循环语句
 
 和C语言一致，初始条件，循环条件，控制条件。
+
+for、while、do...while语句
