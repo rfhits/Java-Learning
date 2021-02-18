@@ -43,7 +43,7 @@
 		"    ${1}",
 		"}"
 	],
-	"description": "System.out.println"
+	"description": "public static void main"
 },
 ```
 
