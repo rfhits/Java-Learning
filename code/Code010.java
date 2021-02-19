@@ -1,5 +1,7 @@
 package code;
 
+// 方法的定义与使用
+
 import java.util.Scanner;
 
 public class Code010 {
