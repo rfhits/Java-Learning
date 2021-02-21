@@ -34,6 +34,29 @@ class demo{
 
 分三步，导包，创建键盘录入对象，使用方法。
 
+### 空格分割
+
+注意只能分割空格
+
+```
+String s = sc.nextLine();
+String[] sArr = s.split(" "); //只分割一个空格
+String[] sArr = s.split("\s+"); // 分割多个空格
+```
+
+### 字符串转数据
+
+```
+int x = Integer.parseInt(String); // 将一个字符串转换成int
+double d = Double.parseDouble(String); // 将一个字符串转换成double
+```
+
+Long同理：
+
+```
+long l = Long.parseLong(String);
+```
+
 ## if语句
 
 和C语言一致，(){}。

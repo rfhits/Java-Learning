@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * DemoXarray1
  */
-public class DemoXarray1 {
+public class Demo5array1 {
 
     public static void main(String[] args) {
         int[] primes = new int[1227170];    // 1227161

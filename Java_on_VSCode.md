@@ -1,6 +1,6 @@
-# 用vscode写Java
+# Java on VSCode
 
-首先呢，俺的课程组推荐是用idea写Java，不过呢，用vscode好久了，反正也是写一些小程序玩，先用vscode顶着。
+首先呢，我的课程组推荐是用idea写Java，不过呢，用vscode好久了，反正也是写一些小程序玩，先用vscode顶着。
 
 ## JDK
 
@@ -50,3 +50,7 @@
 ## 代码风格
 
 安装一个叫做`CheckStyle for Java`的扩展，在扩展的详细描述里的Gif有教咋用。
+
+## 生成getter和setter方法
+
+可以见这篇[文章](https://blog.csdn.net/qq_41106844/article/details/106303295)。
