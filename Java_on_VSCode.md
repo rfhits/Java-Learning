@@ -22,9 +22,9 @@
 
 ## 自定义代码段
 
-可以见这篇[教程](https://www.cnblogs.com/dotnetcrazy/p/9950431.html)，就是`Ctrl`+`Shift`+`P`调出命令面板，然后搜snippet，
+可以见这篇[教程](https://www.cnblogs.com/dotnetcrazy/p/9950431.html)，就是`Ctrl`+`Shift`+`P`调出命令面板，然后搜`snippet`，
 
-因为曾经用过idea，深受psvm的影响，哈哈。
+因为曾经用过idea，深受`psvm`的影响，哈哈。
 
 分享下自己的自定义代码段：
 

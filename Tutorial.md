@@ -1,5 +1,7 @@
 # Tutorial
 
+此文章旨在帮助一个具有少量编程基础的人快速使用Java。
+
 ## 标识符
 
 注意命名的规则：
@@ -44,7 +46,7 @@ for、while、do...while语句
 
 输出后自动换行：`System.out.println();`
 
-## 键盘录入数据
+### 键盘录入数据
 
 分三步，导包，创建键盘录入对象，使用方法。
 
@@ -100,8 +102,36 @@ if(bd1.compareTo(bd2) == 1) {
 
 #### 加减乘除：
 
+注意算完了也只是返回一个值，而本身的值不变，所以想要自乘，还要把结果赋给自己。
+
 ```
 BigDecimal product = bd1.multiply(bd2);
 ```
 
 详见[此博客](https://www.jianshu.com/p/683b2406342f)。
+
+## ArrayList
+
+```
+ArrayList<类型> arrlst = new ArrayList<类型>(大小);
+```
+
+ArrayList是一种容器，添加、删除都很方便。以新建一个大小为3、用于存放String的ArrayList为例：
+
+```
+ArrayList<String> arrlst = new ArrayList<String>(3);
+```
+
+这个类型也可以是自己写的类，()里也可以啥都不写，等到后面add。
+
+### remove操作
+
+这个要小心，我们都知道，可变数组的remove，删掉一个元素后，会往前移动一个单位长度，然后遍历的时候就会漏掉一个，这个陷阱和正确的方法可见[此博客](https://blog.csdn.net/pelifymeng2/article/details/78085836)。
+
+还可以用`removeIf`来删除元素：
+
+```
+bsf.removeIf(s -> s.getName().equals("Alen"));
+```
+
+详见[此](https://www.runoob.com/java/java-arraylist-removeif.html)。

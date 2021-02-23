@@ -18,3 +18,5 @@ String y = sc.nextLine();
 int x = Integer.parseInt(y);
 String s = sc.nextLine();
 ```
+
+说到这，就不得不提Python中的`n = int(input())`，直接读一行，转换成`int`，没有这么多事。
