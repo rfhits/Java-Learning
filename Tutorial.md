@@ -18,17 +18,31 @@ class demo{
 }
 ```
 
-## 输出
+## 基本语句
 
-输出后不换行：`System.out.print();`
-
-输出后自动换行：`System.out.println();`
-
-## 运算符
+### 运算符
 
 和C语言基本一致。最基本的加减乘除和取余
 
 注意类型自动转换以及整数除以整数还是整数
+
+### 条件语句if
+
+和C语言一致，(){}。
+
+### 循环语句
+
+和C语言一致，初始条件，循环条件，控制条件。
+
+for、while、do...while语句
+
+## 输入输出
+
+### 输出
+
+输出后不换行：`System.out.print();`
+
+输出后自动换行：`System.out.println();`
 
 ## 键盘录入数据
 
@@ -57,12 +71,37 @@ Long同理：
 long l = Long.parseLong(String);
 ```
 
-## if语句
+## 大数
 
-和C语言一致，(){}。
+面对超大的整数和小数，我们使用`BigInteger`和`BigDecimal`
 
-## 循环语句
+### 转换
 
-和C语言一致，初始条件，循环条件，控制条件。
+`int`、`long`、`String`等类型转换成大数，
 
-for、while、do...while语句
+1. 直接`new BigDecimal(val)`一个是万能的，
+2. 调用`valueOf()`，缺点是参数不能是`String`
+
+```
+BigDecimal bd = new BigDecimal(double d/long l/int i);
+```
+
+### 运算
+
+#### 比较大小:
+
+```
+if(bd1.compareTo(bd2) == 1) {
+    System.out.println("bd is bigger");
+}
+```
+
+详见[此博客](https://blog.csdn.net/gaolong123456/article/details/91567890)。
+
+#### 加减乘除：
+
+```
+BigDecimal product = bd1.multiply(bd2);
+```
+
+详见[此博客](https://www.jianshu.com/p/683b2406342f)。
