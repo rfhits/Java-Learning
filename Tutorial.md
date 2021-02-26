@@ -20,6 +20,27 @@ class demo{
 }
 ```
 
+## 数据/对象
+
+对于包装类型变量，是可以直接获得的，变量名称.getClass().getName()；对于简单类型变量，是无法直接获得变量类型的，要想获取，必须自定义函数进行返回
+
+### 查看对应的数据类型/类的名称
+
+```
+obj.getClass().getName();
+obj.getClass().getSimpleName();
+```
+
+详见[此](https://blog.csdn.net/yongbutingxide/article/details/89501998)。
+
+### 克隆一个对象
+
+我们都知道Java中的所谓“引用”机制，我们如果要实现类似CTRL+c的功能，就要用到clone。
+
+clone分为深克隆和浅克隆，比如要克隆的对象里的成员变量是个类，即“类套类”，那浅克隆只能克隆第一个类，深层的类还是相同的引用。
+
+详见[此](https://blog.csdn.net/qq_33314107/article/details/80271963)。
+
 ## 基本语句
 
 ### 运算符
@@ -124,6 +145,10 @@ ArrayList<String> arrlst = new ArrayList<String>(3);
 
 这个类型也可以是自己写的类，()里也可以啥都不写，等到后面add。
 
+### 访问ArrayList元素
+
+使用`get(int index)`方法，通过`index`访问`ArrayList`中的元素。
+
 ### remove操作
 
 这个要小心，我们都知道，可变数组的remove，删掉一个元素后，会往前移动一个单位长度，然后遍历的时候就会漏掉一个，这个陷阱和正确的方法可见[此博客](https://blog.csdn.net/pelifymeng2/article/details/78085836)。
@@ -135,3 +160,14 @@ bsf.removeIf(s -> s.getName().equals("Alen"));
 ```
 
 详见[此](https://www.runoob.com/java/java-arraylist-removeif.html)。
+
+### 查询元素是否存在
+
+`ArrayList.contains(obj)`返回boolean类型，表示是否存在。
+
+```
+ArrayList<String> strList = new ArrayList<>();
+strList.add("a");
+System.out.println(strList.contains("a"));
+System.out.println(strList.contains("c"));
+```

@@ -20,3 +20,7 @@ String s = sc.nextLine();
 ```
 
 说到这，就不得不提Python中的`n = int(input())`，直接读一行，转换成`int`，没有这么多事。
+
+## 类的继承
+
+作为继承者的子类无法访问父类的私有（private）变量，可以通过`getAttribute()`方法来访问。
