@@ -94,6 +94,24 @@ Long同理：
 long l = Long.parseLong(String);
 ```
 
+## String
+
+### 字符串比较
+
+```
+str1.equals(str2);
+```
+
+因为使用`==`比较表示的是“是否指向同一个对象”，所以不能用`==`，而要用用`equals`。
+
+### 大小写转换
+
+```
+String test="SHA34cccddee";
+System.out.println(test.toUpperCase());//小写转大写
+System.out.println(test.toLowerCase());//大写转小写
+```
+
 ## 大数
 
 面对超大的整数和小数，我们使用`BigInteger`和`BigDecimal`
