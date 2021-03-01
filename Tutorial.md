@@ -163,7 +163,7 @@ ArrayList<String> arrlst = new ArrayList<String>(3);
 
 这个类型也可以是自己写的类，()里也可以啥都不写，等到后面add。
 
-### 访问ArrayList元素
+### 通过index访问ArrayList元素
 
 使用`get(int index)`方法，通过`index`访问`ArrayList`中的元素。
 
@@ -189,3 +189,29 @@ strList.add("a");
 System.out.println(strList.contains("a"));
 System.out.println(strList.contains("c"));
 ```
+
+## stream
+
+### 转成list
+
+即将一个stream收集起来
+
+```
+ List<Obj> lst = stream.collect(Collectors.toList());
+```
+
+详见[此](https://blog.csdn.net/wangmuming/article/details/72750084)。
+
+### map
+
+map就是映射的意思
+
+### filter
+
+过滤元素，返回值为true的留下来
+
+详见[此](https://blog.csdn.net/qq_33829547/article/details/80279488)。
+
+### sort
+
+排序，用的是
