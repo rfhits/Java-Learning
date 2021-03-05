@@ -112,6 +112,10 @@ System.out.println(test.toUpperCase());//小写转大写
 System.out.println(test.toLowerCase());//大写转小写
 ```
 
+### 获取子串
+
+String.substring()
+
 ## 大数
 
 面对超大的整数和小数，我们使用`BigInteger`和`BigDecimal`
