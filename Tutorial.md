@@ -116,6 +116,8 @@ System.out.println(test.toLowerCase());//大写转小写
 
 String.substring()
 
+### 含有某个正则表达式
+
 ## 大数
 
 面对超大的整数和小数，我们使用`BigInteger`和`BigDecimal`
@@ -219,3 +221,5 @@ map就是映射的意思
 ### sort
 
 排序，用的是
+
+## 正则表达

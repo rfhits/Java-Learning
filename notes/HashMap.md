@@ -90,3 +90,31 @@ for (Integer amount : coinNames.keySet()) {
 ```
 
 可以通过拿到keySet再遍历的方法来逐个访问HashMap中的元素。
+
+### 删除某个元素
+
+应当使用迭代器删除。
+
+```java
+Map<String, Integer> map = new HashMap<>();
+map.put("a", 1);
+map.put("b", 2);
+map.put("c", 3);
+map.put("d", 4);
+
+Iterator<Map.Entry<String, Integer>> iterator = map.entrySet().iterator();
+Map.Entry<String, Integer> entry;
+while (iterator.hasNext()) {
+    entry = iterator.next();
+    if (entry.getValue() % 2 == 0) {
+        iterator.remove();
+    }
+}
+System.out.println(map);
+```
+
+使用Hashmap的entrySet生成一个iterator，然后使用iterator遍历hashmap，对符合某种要求的元素进行删除。
+
+记住要导俩包，一个是Map，一个是Iterator。
+
+参考资料：[Java之HashMap迭代删除使用方法小结](https://blog.csdn.net/liuyueyi25/article/details/90679495)
